@@ -48,18 +48,18 @@ export default function Home() {
       <DesignProcess />
       <Experience />
 
-      {/* Socials + Video Section */}
-      <section className="py-12 px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center justify-center gap-12">
-        {/* Video */}
-        <div className="relative w-48 md:w-48 h-80 md:h-96 rounded-2xl overflow-hidden shadow-lg flex-shrink-0">
+      {/* Video Section */}
+      <section className="relative w-full px-6 md:px-12 py-16">
+        <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg">
           <video
             src="/images/herov.mp4"
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full object-cover"
           />
+
           {/* Edge Blur Overlay */}
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-black/50 to-transparent" />
@@ -68,36 +68,36 @@ export default function Home() {
             <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-black/50 to-transparent" />
           </div>
         </div>
+      </section>
 
-        {/* Socials */}
-        <div className="w-full md:w-auto text-center md:text-left">
-          <h3 className="text-3xl font-semibold text-white mb-6">Socials</h3>
-          <div className="flex justify-center md:justify-start items-center gap-8 text-white text-2xl">
-            <a
-              href="https://instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-yellow-400 transition-colors"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-yellow-400 transition-colors"
-            >
-              <FaTwitter />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/azubike-oloye-41b740382/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-yellow-400 transition-colors"
-            >
-              <FaLinkedin />
-            </a>
-          </div>
+      {/* Socials */}
+      <section className="px-6 md:px-12 lg:px-20 py-12 text-center md:text-left">
+        <h3 className="text-3xl font-semibold text-white mb-6">Socials</h3>
+        <div className="flex justify-center md:justify-start items-center gap-8 text-white text-2xl">
+          <a
+            href="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-yellow-400 transition-colors"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-yellow-400 transition-colors"
+          >
+            <FaTwitter />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/azubike-oloye-41b740382/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-yellow-400 transition-colors"
+          >
+            <FaLinkedin />
+          </a>
         </div>
       </section>
 

@@ -2,12 +2,11 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { FiCopy, FiCheck } from "react-icons/fi";
+import { FiMail } from "react-icons/fi"; // Email icon
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const [copied, setCopied] = useState(false);
   const email = "oloyejr01@gmail.com";
   const pathname = usePathname();
 
@@ -16,12 +15,6 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
 
   // Function to determine if link is active
   const isActive = (link: string) => pathname === link;
@@ -62,23 +55,17 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Right Section */}
-        <div className="flex items-center space-x-4">
-          <span className="text-lg font-medium text-white">LET&apos;S CONNECT</span>
-          <div className="flex items-center bg-white hover:bg-gray-200 transition-colors duration-300 rounded-full px-4 py-1 relative">
-            <button
-              onClick={handleCopy}
-              className="flex items-center text-[#0b1e4a] text-base font-medium"
-            >
-              {email}
-              <span className="ml-2">{copied ? <FiCheck className="text-green-500" /> : <FiCopy />}</span>
-            </button>
-            {copied && (
-              <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-sm text-white">
-                Email copied!
-              </span>
-            )}
-          </div>
+        {/* Right Section - Gmail Link */}
+        <div className="ml-auto flex items-center">
+          <a
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white text-2xl hover:text-yellow-400 transition-colors"
+            aria-label="Email via Gmail"
+          >
+            <FiMail />
+          </a>
         </div>
       </div>
     </nav>
