@@ -49,7 +49,7 @@ export default function HeroSection() {
       >
         <div className="relative w-64 h-80 sm:w-80 sm:h-96 md:w-[440px] md:h-[560px] rounded-2xl overflow-hidden shadow-lg">
           <Image
-            src="/images/hero.jpeg"
+            src="/images/Hero.jpeg"
             alt="Hero Image"
             fill
             className="object-cover"

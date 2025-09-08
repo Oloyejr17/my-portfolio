@@ -52,7 +52,7 @@ export default function Home() {
       <section className="relative w-full px-6 md:px-12 py-16">
         <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg">
           <video
-            src="/images/herov.mp4"
+            src="/images/Herov.mp4"
             autoPlay
             loop
             muted
