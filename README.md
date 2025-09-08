@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Oloye Jr | Full-Stack Web Developer Portfolio
 
-## Getting Started
+Welcome to my personal portfolio website! This project showcases my **work, skills, and full-stack development process**, designed to be modern, responsive, and interactive using **Next.js**, **React**, **TailwindCSS**, and **Framer Motion**.
 
-First, run the development server:
+---
+
+## 👋 About Me
+
+Hi, I'm **Oloye Jr**, a passionate Full-Stack Web Developer and Freelance Software Engineer.  
+I specialize in building **scalable, efficient, and visually engaging web and mobile applications** with a strong focus on user experience and performance.  
+
+**Technologies I work with:**
+- **Frontend:** React.js, React Native, modern JavaScript, TailwindCSS  
+- **Backend:** Node.js, Express, MongoDB (or relevant backend stack)  
+- **Design & UI/UX:** Clean, responsive, and interactive designs  
+- **Tools:** Framer Motion, React Icons, Git/GitHub  
+
+I love **making cool things and solving complex problems for people — like you.**
+
+---
+
+## 💻 Features
+
+- **Responsive and modern UI** for desktop and mobile  
+- **Animated Hero section** with scroll-based motion effects  
+- **Interactive Navbar** with active section highlighting and copy-to-clipboard email  
+- **Projects showcase** with images, descriptions, and GitHub links  
+- **Full-Stack Development Process section**  
+- **Experience section** highlighting work history and skills  
+- **Social media integration** (Instagram, Twitter, LinkedIn)  
+- **Embedded hero video** for visual engagement  
+- **Clean, professional typography and color scheme**  
+
+---
+
+## 🛠 Tech Stack
+
+- **Next.js 15**
+- **React**
+- **TailwindCSS**
+- **Framer Motion**
+- **React Icons**
+- **TypeScript**
+- **Vercel** for deployment
+
+---
+
+## 📁 Project Structure
+my-portfolio/
+├─ app/
+│ ├─ page.tsx # Homepage
+│ └─ work/page.tsx # Work/Projects page
+├─ components/
+│ ├─ Navbar.tsx
+│ ├─ Hero.tsx
+│ ├─ HeroSection.tsx
+│ ├─ DesignProcess.tsx
+│ ├─ Experience.tsx
+│ └─ Footer.tsx
+├─ public/
+│ ├─ images/ # Project images, hero image, etc.
+│ └─ herov.mp4 # Hero video
+├─ styles/ # TailwindCSS and global styles
+├─ package.json
+└─ README.md
+
+
+---
+
+## 🚀 Installation & Setup
+
+1. **Clone the repository**
 
 ```bash
+git clone https://github.com/Oloyejr17/my-portfolio.git
+cd my-portfolio
+
+
+Install dependencies
+
+npm install
+
+
+Run development server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open http://localhost:3000
+ in your browser to view the website.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build for production
 
-## Learn More
+npm run build
+npm start
 
-To learn more about Next.js, take a look at the following resources:
+📖 Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Navigate to Home to see the hero section, embedded video, and professional statement
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Scroll to explore the Full-Stack Development Process and Experience sections
 
-## Deploy on Vercel
+Visit Work to view selected projects with descriptions and GitHub links
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Click LET'S CONNECT to copy my email to the clipboard
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Follow my social media links in the Socials section
+
+🔗 Live Demo
+[Coming Soon](#)
+
+⚡ License
+
+This project is licensed under the MIT License. See the LICENSE
+ file for details.
