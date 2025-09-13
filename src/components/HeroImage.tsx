@@ -16,7 +16,7 @@ export default function HeroImage() {
       className="relative w-[330px] h-[400px] md:w-[440px] md:h-[560px] rounded-2xl overflow-hidden mx-auto shadow-lg"
     >
       <Image
-        src="/images/Hero.jpeg"
+        src="/images/Hero.png"
         alt="Portrait of Oloye Jr"
         fill
         className="object-cover"

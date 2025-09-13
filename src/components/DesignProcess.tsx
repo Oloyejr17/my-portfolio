@@ -38,7 +38,7 @@ export default function DesignProcess() {
   return (
     <section className="py-20 bg-black text-white px-6 md:px-12 lg:px-20">
       <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12">
-      My Full-Stack Development Process
+      My Development Process
 
       </h2>
 

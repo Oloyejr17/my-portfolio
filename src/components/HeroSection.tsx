@@ -22,8 +22,8 @@ export default function HeroSection() {
           className="text-base sm:text-lg md:text-2xl text-gray-300 max-w-md mx-auto md:mx-0 leading-relaxed"
           style={{ y }}
         >
-          I’m <span className="text-white font-semibold">Oloye</span>, a
-          Full-Stack Web Developer and Freelance Software Engineer. I craft
+          I’m <span className="text-white font-semibold">Azubike Oloye</span>, a
+          Frontend Web Developer and Freelance Software Engineer. I craft
           scalable and efficient web and mobile applications using{" "}
           <span className="text-yellow-400 font-medium">React.js</span>,{" "}
           <span className="text-yellow-400 font-medium">React Native</span>, and
@@ -49,7 +49,7 @@ export default function HeroSection() {
       >
         <div className="relative w-64 h-80 sm:w-80 sm:h-96 md:w-[440px] md:h-[560px] rounded-2xl overflow-hidden shadow-lg">
           <Image
-            src="/images/Hero.jpeg"
+            src="/images/Hero.png"
             alt="Hero Image"
             fill
             className="object-cover"

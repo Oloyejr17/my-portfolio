@@ -18,11 +18,10 @@ export default function Hero() {
         className="relative text-center px-6 md:px-12 z-10"
       >
         <h1 className="text-[3rem] md:text-[6rem] font-bold leading-tight">
-          Fullstack Developer©
+          Frontend Developer©
         </h1>
         <p className="max-w-xl mx-auto text-lg md:text-2xl mt-4 text-gray-300">
-          I love making cool things and solving complex problems for people —
-          like you!
+          I love making cool things and solving complex problems for people like you!
         </p>
       </motion.div>
     </section>
