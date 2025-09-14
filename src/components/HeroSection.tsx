@@ -8,9 +8,9 @@ export default function HeroSection() {
   const y = useTransform(scrollY, [0, 400], [0, -100]);
 
   return (
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-12 relative">
+    <section className="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 relative pt-4 md:pt-6 pb-12 md:pb-16">
       {/* Left: Intro Text */}
-      <div className="flex-1 text-center md:text-left space-y-6 mt-20 md:mt-0">
+      <div className="flex-1 text-center md:text-left space-y-6">
         <motion.h5
           className="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-wide"
           style={{ y }}
@@ -44,7 +44,7 @@ export default function HeroSection() {
 
       {/* Right: Hero Image */}
       <motion.div
-        className="flex-1 flex justify-center md:justify-end mt-12 md:mt-0"
+        className="flex-1 flex justify-center md:justify-end mt-8 md:mt-0"
         style={{ y }}
       >
         <div className="relative w-64 h-80 sm:w-80 sm:h-96 md:w-[440px] md:h-[560px] rounded-2xl overflow-hidden shadow-lg">

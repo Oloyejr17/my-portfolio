@@ -21,8 +21,12 @@ export default function Home() {
       className="bg-black"
     >
       <Navbar />
-      <Hero />
-      <HeroSection />
+
+      {/* Hero + HeroSection with reduced spacing */}
+      <div className="space-y-6 sm:space-y-8">
+        <Hero />
+        <HeroSection />
+      </div>
 
       {/* Code Image */}
       <div className="w-full flex justify-center py-16">
@@ -51,19 +55,16 @@ export default function Home() {
       {/* Video + Socials Section */}
       <section className="relative w-full px-6 md:px-12 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          
           {/* Video */}
           <div className="relative h-[250px] sm:h-[350px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg flex items-center justify-center">
             <video
-  src="/images/Herov.mp4"
-  autoPlay
-  loop
-  muted
-  playsInline
-  className="w-auto h-full object-contain video-tornado"
-/>
-
-
+              src="/images/Herov.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-auto h-full object-contain video-tornado"
+            />
 
             {/* Edge Blur Overlay */}
             <div className="absolute inset-0 pointer-events-none">
